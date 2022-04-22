@@ -1,0 +1,48 @@
+fields:
+    name:
+        label: Название
+        span: auto
+        required: 1
+        type: text
+        commentAbove: 'Используется в качестве основного названия категории'
+    status:
+        label: Статус
+        span: auto
+        default: 1
+        required: 1
+        type: checkbox
+        comment: 'Включить/выключить отображение категории на сайте'
+    title:
+        label: Заголовок
+        span: full
+        required: 1
+        type: text
+        commentAbove: 'Используется для H1 на странице категории'
+    description:
+        label: Описание
+        size: small
+        span: full
+        type: textarea
+        commentAbove: 'Используется на странице категории'
+tabs:
+    fields:
+        meta_title:
+            label: Title
+            span: full
+            required: 1
+            type: text
+            commentAbove: 'Используется в мета-теге title на странице категории'
+            tab: SEO
+        meta_description:
+            label: Description
+            size: small
+            span: full
+            type: textarea
+            commentAbove: 'Используется в мета-теге description на странице категории'
+            tab: SEO
+        meta_keywords:
+            label: Keywords
+            span: full
+            type: text
+            commentAbove: 'Используется в мета-теге keywords на странице категории'
+            tab: SEO
