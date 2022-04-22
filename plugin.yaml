@@ -1,0 +1,6 @@
+plugin:
+    name: 'yamobile.blog::lang.plugin.name'
+    description: 'yamobile.blog::lang.plugin.description'
+    author: Ya-mobile
+    icon: oc-icon-newspaper-o
+    homepage: ''
