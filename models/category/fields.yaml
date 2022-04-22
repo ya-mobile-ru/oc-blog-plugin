@@ -18,6 +18,9 @@ fields:
         span: full
         placeholder: Заголовок
         required: 1
+        preset:
+            field: name
+            type: exact
         type: text
         commentAbove: 'Используется для H1 на странице категории'
     description:
@@ -31,6 +34,9 @@ fields:
         label: URL
         span: full
         placeholder: category-url
+        preset:
+            field: name
+            type: slug
         type: text
         commentAbove: 'URL категории'
 tabs:
