@@ -24,6 +24,11 @@ fields:
         span: full
         type: textarea
         commentAbove: 'Используется на странице категории'
+    slug:
+        label: URL
+        span: full
+        type: text
+        commentAbove: 'URL категории'
 tabs:
     fields:
         meta_title:
