@@ -1,2 +1,5 @@
 1.0.1:
-    - Initialize plugin.
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table yamobile_blog_category'
+    - builder_table_create_yamobile_blog_category.php

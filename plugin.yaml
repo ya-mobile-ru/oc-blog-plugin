@@ -4,3 +4,13 @@ plugin:
     author: Ya-mobile
     icon: oc-icon-newspaper-o
     homepage: ''
+navigation:
+    blog:
+        label: Блог
+        url: yamobile/blog/category
+        icon: icon-file
+        sideMenu:
+            category:
+                label: Категории
+                url: yamobile/blog/category
+                icon: icon-list
