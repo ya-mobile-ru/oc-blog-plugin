@@ -2,6 +2,7 @@ fields:
     name:
         label: Название
         span: auto
+        required: 1
         placeholder: Статья
         type: text
         commentAbove: 'Используется в качестве основного названия статьи и в теге h1 на странице статьи'
@@ -21,6 +22,7 @@ fields:
         label: Описание
         size: small
         span: auto
+        required: 1
         placeholder: 'Описание в несколько предложений'
         type: textarea
         commentAbove: 'Используется в карточке статьи'
@@ -28,11 +30,13 @@ fields:
         label: Статья
         size: giant
         span: full
+        required: 1
         placeholder: 'Статья произвольной длинны'
         type: richeditor
     slug:
         label: URL
         span: full
+        required: 1
         placeholder: post-url
         preset:
             field: name
@@ -45,7 +49,6 @@ tabs:
             label: Title
             span: full
             placeholder: 'Title в несколько слов'
-            required: 1
             type: text
             commentAbove: 'Используется в мета-теге title на странице статьи'
             tab: SEO
