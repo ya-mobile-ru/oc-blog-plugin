@@ -16,5 +16,5 @@ navigation:
                 icon: icon-list
             post:
                 label: Статьи
-                url: yamobile/blog/posts
+                url: yamobile/blog/post
                 icon: icon-file-text
