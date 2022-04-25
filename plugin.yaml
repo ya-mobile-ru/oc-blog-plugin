@@ -8,9 +8,13 @@ navigation:
     blog:
         label: Блог
         url: yamobile/blog/category
-        icon: icon-file
+        icon: icon-files-o
         sideMenu:
             category:
                 label: Категории
                 url: yamobile/blog/category
                 icon: icon-list
+            post:
+                label: Статьи
+                url: yamobile/blog/post
+                icon: icon-file-text

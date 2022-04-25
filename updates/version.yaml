@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table yamobile_blog_category'
     - builder_table_create_yamobile_blog_category.php
+1.0.3:
+    - 'Created table yamobile_blog_post'
+    - builder_table_create_yamobile_blog_post.php
