@@ -67,3 +67,11 @@ tabs:
             type: text
             commentAbove: 'Используется в мета-теге keywords на странице статьи'
             tab: SEO
+        categories:
+            label: Категории
+            nameFrom: name
+            descriptionFrom: description
+            span: full
+            type: relation
+            commentAbove: 'Категории, в которых будет отображаться статья'
+            tab: Связи
