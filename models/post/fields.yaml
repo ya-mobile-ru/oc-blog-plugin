@@ -22,7 +22,7 @@ fields:
         label: Описание
         size: small
         span: auto
-        required: 1
+        required: 0
         placeholder: 'Описание в несколько предложений'
         type: textarea
         commentAbove: 'Используется в карточке статьи'
