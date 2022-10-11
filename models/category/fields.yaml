@@ -1,14 +1,14 @@
 fields:
     name:
         label: Название
-        span: full
+        span: auto
         placeholder: Категория
         required: 1
         type: text
         commentAbove: 'Используется в качестве основного названия категории'
     status:
         label: Статус
-        span: auto
+        span: full
         default: 1
         required: 1
         type: checkbox
