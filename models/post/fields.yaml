@@ -1,7 +1,7 @@
 fields:
     name:
         label: Название
-        span: auto
+        span: full
         required: 1
         placeholder: Статья
         type: text
