@@ -16,7 +16,7 @@ fields:
     image:
         label: Изображение
         mode: image
-        span: auto
+        span: full
         type: mediafinder
     description:
         label: Описание
