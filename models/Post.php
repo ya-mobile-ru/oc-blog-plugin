@@ -22,7 +22,6 @@ class Post extends Model
     public $rules = [
         'name' => 'required',
         'status' => 'required',
-        'description' => 'required',
         'content' => 'required',
         'slug' => 'required'
     ];

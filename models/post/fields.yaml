@@ -1,14 +1,14 @@
 fields:
     name:
         label: Название
-        span: auto
-        required: 1
+        span: full
         placeholder: Статья
+        required: 1
         type: text
         commentAbove: 'Используется в качестве основного названия статьи и в теге h1 на странице статьи'
     status:
         label: Статус
-        span: auto
+        span: full
         default: 1
         required: 1
         type: checkbox
@@ -16,13 +16,13 @@ fields:
     image:
         label: Изображение
         mode: image
-        span: auto
+        span: full
         type: mediafinder
     description:
         label: Описание
         size: small
-        span: auto
-        required: 1
+        span: full
+        required: 0
         placeholder: 'Описание в несколько предложений'
         type: textarea
         commentAbove: 'Используется в карточке статьи'
