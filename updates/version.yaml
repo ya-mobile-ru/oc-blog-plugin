@@ -12,3 +12,6 @@
 1.0.5:
     - 'Updated table yamobile_blog_category'
     - builder_table_update_yamobile_blog_category.php
+1.0.6:
+    - 'Updated table yamobile_blog_category'
+    - builder_table_update_yamobile_blog_category_2.php

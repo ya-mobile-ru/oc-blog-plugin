@@ -45,7 +45,7 @@ tabs:
             label: Title
             span: full
             placeholder: 'Title в несколько слов'
-            required: 1
+            required: 0
             type: text
             commentAbove: 'Используется в мета-теге title на странице категории'
             tab: SEO
