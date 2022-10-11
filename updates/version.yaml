@@ -9,3 +9,6 @@
 1.0.4:
     - 'Created table yamobile_blog_posts_categories'
     - builder_table_create_yamobile_blog_posts_categories.php
+1.0.5:
+    - 'Updated table yamobile_blog_category'
+    - builder_table_update_yamobile_blog_category.php

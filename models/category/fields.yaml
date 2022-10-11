@@ -17,7 +17,7 @@ fields:
         label: Заголовок
         span: full
         placeholder: Заголовок
-        required: 1
+        required: 0
         preset:
             field: name
             type: exact
