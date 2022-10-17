@@ -1,6 +1,7 @@
 <?php namespace YaMobile\Blog\Models;
 
 use Model;
+use YaMobile\Blog\Models\Post;
 
 /**
  * Model
@@ -23,5 +24,16 @@ class Category extends Model
         'status' => 'required',
         'slug' => 'required',
         'name' => 'required'
+    ];
+
+    /*
+     * Relations
+     */
+    public $belongsToMany = [
+        'posts' => [
+            Post::class,
+            'table' => 'yamobile_blog_posts_categories',
+            'order' => 'name'
+        ]
     ];
 }
