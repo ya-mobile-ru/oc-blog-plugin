@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            \YaMobile\Blog\Components\Posts::class => 'Posts'
+            \YaMobile\Blog\Components\Posts::class => 'Posts',
+            \YaMobile\Blog\Components\Categories::class => 'Categories'
         ];
     }
 
