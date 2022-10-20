@@ -49,6 +49,12 @@ fields:
         descriptionFrom: description
         span: full
         type: relation
+    tags:
+        label: Теги
+        nameFrom: name
+        descriptionFrom: description
+        span: full
+        type: relation
 tabs:
     fields:
         meta_title:
