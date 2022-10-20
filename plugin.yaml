@@ -18,3 +18,7 @@ navigation:
                 label: Статьи
                 url: yamobile/blog/post
                 icon: icon-file-text
+            tags:
+                label: Теги
+                url: yamobile/blog/tag
+                icon: icon-tags
