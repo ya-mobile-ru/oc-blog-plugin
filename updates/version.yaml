@@ -18,3 +18,15 @@
 1.0.7:
     - 'Updated table yamobile_blog_post'
     - builder_table_update_yamobile_blog_post.php
+1.0.8:
+    - 'Created table yamobile_blog_tags'
+    - builder_table_create_yamobile_blog_tags.php
+1.0.9:
+    - 'Updated table yamobile_blog_tags'
+    - builder_table_update_yamobile_blog_tags.php
+1.0.10:
+    - 'Created table yamobile_blog_posts_tags'
+    - builder_table_create_yamobile_blog_posts_tags.php
+1.0.11:
+    - 'Updated table yamobile_blog_posts_tags'
+    - builder_table_update_yamobile_blog_posts_tags.php

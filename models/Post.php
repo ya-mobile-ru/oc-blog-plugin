@@ -34,6 +34,11 @@ class Post extends Model
             Category::class,
             'table' => 'yamobile_blog_posts_categories',
             'order' => 'name'
+        ],
+        'tags' => [
+            Tag::class,
+            'table' => 'yamobile_blog_posts_tags',
+            'order' => 'name'
         ]
     ];
 }

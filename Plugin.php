@@ -9,7 +9,8 @@ class Plugin extends PluginBase
         return [
             \YaMobile\Blog\Components\Posts::class => 'Posts',
             \YaMobile\Blog\Components\Categories::class => 'Categories',
-            \YaMobile\Blog\Components\Post::class => 'Post'
+            \YaMobile\Blog\Components\Post::class => 'Post',
+            \YaMobile\Blog\Components\Tags::class => 'Tags'
         ];
     }
 
