@@ -41,4 +41,8 @@ class Post extends Model
             'order' => 'name'
         ]
     ];
+
+    public $belongsTo = [
+        'category' => Category::class
+    ];
 }

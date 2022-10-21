@@ -43,6 +43,12 @@ fields:
             type: slug
         type: text
         commentAbove: 'URL статьи'
+    category:
+        label: Категория
+        nameFrom: name
+        descriptionFrom: description
+        span: full
+        type: relation
     categories:
         label: Категории
         nameFrom: name
@@ -55,8 +61,19 @@ fields:
         descriptionFrom: description
         span: full
         type: relation
+    datetime:
+        label: Дата/время
+        span: full
+        mode: datetime
+        type: datepicker
 tabs:
     fields:
+        h1:
+            label: H1
+            span: full
+            type: text
+            commentAbove: 'Используется в теге h1 на странице статьи'
+            tab: SEO
         meta_title:
             label: Title
             span: full

@@ -30,3 +30,15 @@
 1.0.11:
     - 'Updated table yamobile_blog_posts_tags'
     - builder_table_update_yamobile_blog_posts_tags.php
+1.0.12:
+    - 'Updated table yamobile_blog_post'
+    - builder_table_update_yamobile_blog_post_2.php
+1.0.13:
+    - 'Updated table yamobile_blog_post'
+    - builder_table_update_yamobile_blog_post_3.php
+1.0.16:
+    - 'Updated table yamobile_blog_post'
+    - builder_table_update_yamobile_blog_post_5.php
+1.0.17:
+    - 'Updated table yamobile_blog_post'
+    - builder_table_update_yamobile_blog_post_3.php
