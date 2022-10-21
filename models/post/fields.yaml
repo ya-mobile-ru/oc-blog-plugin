@@ -61,6 +61,11 @@ fields:
         descriptionFrom: description
         span: full
         type: relation
+    datetime:
+        label: Дата/время
+        span: full
+        mode: datetime
+        type: datepicker
 tabs:
     fields:
         meta_title:
