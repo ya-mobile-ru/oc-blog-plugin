@@ -43,6 +43,12 @@ fields:
             type: slug
         type: text
         commentAbove: 'URL статьи'
+    category:
+        label: Категория
+        nameFrom: name
+        descriptionFrom: description
+        span: full
+        type: relation
     categories:
         label: Категории
         nameFrom: name

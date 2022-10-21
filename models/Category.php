@@ -36,4 +36,8 @@ class Category extends Model
             'order' => 'name'
         ]
     ];
+
+    public $hasMany = [
+        'main_posts' => Post::class
+    ];
 }
