@@ -23,6 +23,11 @@ fields:
             type: exact
         type: text
         commentAbove: 'Используется для H1 на странице категории'
+    image:
+        label: Изображение
+        span: full
+        mode: image
+        type: mediafinder
     description:
         label: Описание
         size: small
