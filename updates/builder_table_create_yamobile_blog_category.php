@@ -1,14 +1,15 @@
-<?php namespace YaMobile\Blog\Updates;
+<?php
 
-use Schema;
+namespace YaMobile\Blog\Updates;
+
 use October\Rain\Database\Updates\Migration;
+use Schema;
 
 class BuilderTableCreateYamobileBlogCategory extends Migration
 {
     public function up()
     {
-        Schema::create('yamobile_blog_category', function($table)
-        {
+        Schema::create('yamobile_blog_category', function ($table) {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->timestamp('created_at')->nullable();
@@ -23,7 +24,7 @@ class BuilderTableCreateYamobileBlogCategory extends Migration
             $table->string('slug');
         });
     }
-    
+
     public function down()
     {
         Schema::dropIfExists('yamobile_blog_category');
