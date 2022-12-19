@@ -1,2 +1,2 @@
 # Ya-mobile.Blog
-Плагин блога для OctoberCMS
+Blog plugin for October CMS.
