@@ -1,5 +1,5 @@
 {
-	"name": "yamobile/oc-blog-plugin",
+	"name": "yamobile/blog-plugin",
 	"type": "october-plugin",
 	"description": "Blog plugin for October CMS",
 	"require": {
