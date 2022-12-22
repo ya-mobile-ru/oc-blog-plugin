@@ -1,4 +1,4 @@
-<?php namespace YaMobile\Blog\Models;
+<?php namespace Yamobile\Blog\Models;
 
 use Model;
 

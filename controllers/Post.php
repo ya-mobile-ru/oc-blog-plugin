@@ -1,4 +1,4 @@
-<?php namespace YaMobile\Blog\Controllers;
+<?php namespace Yamobile\Blog\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -13,6 +13,6 @@ class Post extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('YaMobile.Blog', 'blog', 'post');
+        BackendMenu::setContext('Yamobile.Blog', 'blog', 'post');
     }
 }

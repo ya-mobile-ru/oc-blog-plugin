@@ -1,7 +1,7 @@
-<?php namespace YaMobile\Blog\Components;
+<?php namespace Yamobile\Blog\Components;
 
 use Cms\Classes\ComponentBase;
-use YaMobile\Blog\Models\Tag;
+use Yamobile\Blog\Models\Tag;
 
 class Tags extends ComponentBase
 {

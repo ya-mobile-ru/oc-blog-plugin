@@ -3,11 +3,11 @@ Blog plugin for October CMS.
 ## Installation
 Run the following to install this plugin:
 ```
-php artisan plugin:install YaMobile.Blog
+php artisan plugin:install Yamobile.Blog
 ```
 To uninstall this plugin:
 ```
-php artisan plugin:remove YaMobile.Blog
+php artisan plugin:remove Yamobile.Blog
 ```
 ## Using components
 This plugin provides 4 components: Categories, Category, Posts and Post. Components have no default markup but they provide convenient work with data. Markup must be added by themes.

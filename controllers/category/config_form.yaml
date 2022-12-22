@@ -1,6 +1,6 @@
 name: Category
 form: $/yamobile/blog/models/category/fields.yaml
-modelClass: YaMobile\Blog\Models\Category
+modelClass: Yamobile\Blog\Models\Category
 defaultRedirect: yamobile/blog/category
 create:
     redirect: 'yamobile/blog/category/update/:id'

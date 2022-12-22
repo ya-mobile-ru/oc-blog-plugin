@@ -1,8 +1,8 @@
-<?php namespace YaMobile\Blog\Components;
+<?php namespace Yamobile\Blog\Components;
 
 use Cms\Classes\ComponentBase;
-use YaMobile\Blog\Models\Post as BlogPost;
-use YaMobile\Blog\Models\Category;
+use Yamobile\Blog\Models\Post as BlogPost;
+use Yamobile\Blog\Models\Category;
 
 class Post extends ComponentBase
 {
