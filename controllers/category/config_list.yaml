@@ -1,5 +1,5 @@
 title: Category
-modelClass: YaMobile\Blog\Models\Category
+modelClass: Yamobile\Blog\Models\Category
 list: $/yamobile/blog/models/category/columns.yaml
 recordUrl: 'yamobile/blog/category/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'

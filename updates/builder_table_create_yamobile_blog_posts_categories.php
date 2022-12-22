@@ -1,4 +1,4 @@
-<?php namespace YaMobile\Blog\Updates;
+<?php namespace Yamobile\Blog\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

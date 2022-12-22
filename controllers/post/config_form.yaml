@@ -1,6 +1,6 @@
 name: Post
 form: $/yamobile/blog/models/post/fields.yaml
-modelClass: YaMobile\Blog\Models\Post
+modelClass: Yamobile\Blog\Models\Post
 defaultRedirect: yamobile/blog/post
 create:
     redirect: 'yamobile/blog/post/update/:id'

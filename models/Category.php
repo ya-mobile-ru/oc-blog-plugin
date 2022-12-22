@@ -1,7 +1,7 @@
-<?php namespace YaMobile\Blog\Models;
+<?php namespace Yamobile\Blog\Models;
 
 use Model;
-use YaMobile\Blog\Models\Post;
+use Yamobile\Blog\Models\Post;
 
 /**
  * Model

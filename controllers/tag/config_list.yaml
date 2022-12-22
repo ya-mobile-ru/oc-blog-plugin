@@ -1,5 +1,5 @@
 list: $/yamobile/blog/models/tag/columns.yaml
-modelClass: YaMobile\Blog\Models\Tag
+modelClass: Yamobile\Blog\Models\Tag
 title: Tag
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
