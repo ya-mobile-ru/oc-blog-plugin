@@ -13,6 +13,12 @@ fields:
         required: 1
         type: checkbox
         comment: 'Включить/выключить отображение категории на сайте'
+    title:
+        label: Заголовок
+        span: full
+        type: text
+        commentAbove: 'Используется на странице статьи'
+        tab: SEO
     image:
         label: Изображение
         mode: image
@@ -68,12 +74,6 @@ fields:
         type: datepicker
 tabs:
     fields:
-        h1:
-            label: H1
-            span: full
-            type: text
-            commentAbove: 'Используется в теге h1 на странице статьи'
-            tab: SEO
         meta_title:
             label: Title
             span: full
