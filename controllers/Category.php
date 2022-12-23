@@ -1,7 +1,6 @@
 <?php namespace YaMobile\Blog\Controllers;
 
 use Backend\Classes\Controller;
-use BackendMenu;
 
 class Category extends Controller
 {

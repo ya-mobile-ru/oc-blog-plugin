@@ -17,5 +17,16 @@ class Plugin extends PluginBase
 
     public function registerSettings()
     {
+        return [
+            'category' => [
+                'label' => 'Категории',
+                'description' => 'Настройки категорий.',
+                'category' => 'Контент',
+                'icon' => 'icon-pencil',
+                'class' => \YaMobile\Blog\Models\Settings::class,
+                'order' => 500,
+                'keywords' => 'blog post category',
+            ],
+        ];
     }
 }

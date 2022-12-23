@@ -1,0 +1,37 @@
+fields:
+  name:
+    label: Название
+    span: full
+    placeholder: 'Название'
+    required: 1
+    type: text
+    commentAbove: 'Используется в качестве основного названия главной страницы'
+  slug:
+    label: URL
+    span: full
+    placeholder: 'url'
+    required: 1
+    type: text
+    commentAbove: 'Используется в ссылке на страницу'
+    preset:
+      field: name
+      type: slug
+  h1:
+    label: Заголовок
+    span: full
+    placeholder: 'Заголовок'
+    required: 1
+    type: text
+    commentAbove: 'Используется в теге h1 на главной странице'
+  title:
+    label: Title
+    span: full
+    placeholder: 'Мета-тег title'
+    type: text
+    commentAbove: 'Содержимое мета-тега title'
+  description:
+    label: Description
+    span: full
+    placeholder: 'Мета-тег description'
+    type: text
+    commentAbove: 'Содержимое мета-тега description'
