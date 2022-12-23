@@ -3,15 +3,16 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateYamobileBlogPostsTags extends Migration
+class CreateYamobileBlogPostsTags extends Migration
 {
     public function up()
     {
         Schema::create('yamobile_blog_posts_tags', function($table)
         {
             $table->engine = 'InnoDB';
-            $table->integer('post_id');
-            $table->smallInteger('tag_id');
+            $table->integer('post_id')->unsigned();
+            $table->integer('tag_id')->unsigned();
+            $table->primary(['post_id','tag_id']);
         });
     }
     

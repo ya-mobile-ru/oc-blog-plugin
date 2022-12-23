@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateYamobileBlogTags extends Migration
+class CreateYamobileBlogTags extends Migration
 {
     public function up()
     {
@@ -11,9 +11,10 @@ class BuilderTableCreateYamobileBlogTags extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
+            $table->string('name');
+            $table->string('slug');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
-            $table->string('name');
         });
     }
     

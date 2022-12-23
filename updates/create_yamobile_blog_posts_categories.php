@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateYamobileBlogPostsCategories extends Migration
+class CreateYamobileBlogPostsCategories extends Migration
 {
     public function up()
     {
