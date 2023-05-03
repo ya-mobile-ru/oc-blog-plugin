@@ -11,7 +11,8 @@ class Plugin extends PluginBase
             \Yamobile\Blog\Components\Categories::class => 'Categories',
             \Yamobile\Blog\Components\Post::class => 'Post',
             \Yamobile\Blog\Components\Tags::class => 'Tags',
-            \Yamobile\Blog\Components\Category::class => 'Category'
+            \Yamobile\Blog\Components\Category::class => 'Category',
+            \Yamobile\Blog\Components\BlogSettingsComponent::class => 'BlogSettings',
         ];
     }
 
