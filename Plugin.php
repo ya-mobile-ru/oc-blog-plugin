@@ -17,5 +17,16 @@ class Plugin extends PluginBase
 
     public function registerSettings()
     {
+        return [
+            'blog' => [
+                'label' => 'Главная страница блога',
+                'description' => 'Настройки главной страницы блога',
+                'category' => 'Содержание',
+                'icon' => 'oc-icon-newspaper-o',
+                'class' => \Yamobile\Blog\Models\BlogSettings::class,
+                'order' => 500,
+                'keywords' => 'блог'
+            ]
+        ];
     }
 }
