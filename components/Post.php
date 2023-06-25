@@ -20,6 +20,12 @@ class Post extends ComponentBase
     public function defineProperties()
     {
         return [
+            'blog_slug' => [
+                'title'       => 'Параметр URL',
+                'description' => 'Параметр URL, необходимый для выбора конкретной записи.',
+                'default'     => '{{ :blog_slug }}',
+                'type'        => 'string',
+            ],
             'slug' => [
                 'title'       => 'Параметр URL',
                 'description' => 'Параметр URL, необходимый для выбора конкретной записи.',
