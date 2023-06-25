@@ -31,4 +31,20 @@ class Category extends ComponentBase
         
         return BlogCategory::where('slug', $slug)->first();
     }
+
+    private function generateBreadcrumbs()
+    {
+
+        $arBreadcrumbs = array();
+
+        $category = $this->loadCategory();
+
+        $arBreadcrumbs[] = [
+            'name' => $category->name,
+            'link' => false
+        ];
+
+        return $arBreadcrumbs;
+
+    }
 }
