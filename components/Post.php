@@ -54,4 +54,28 @@ class Post extends ComponentBase
         
         return BlogPost::where('slug', $slug)->first();
     }
+
+    private function generateBreadcrumbs()
+    {
+
+        $arBreadcrumbs = array();
+
+        $post = $this->loadPost();
+
+        $category = $post->category;
+
+        $arBreadcrumbs[] = [
+            'name' => $category->name,
+            'link' => $category->slug
+        ];
+
+        $arBreadcrumbs[] = [
+            'name' => $post->name,
+            'link' => false
+        ];
+
+        return $arBreadcrumbs;
+
+    }
+
 }
