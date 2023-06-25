@@ -20,8 +20,8 @@ class Categories extends ComponentBase
     {
         return [
             'items' => [
-                'title'       => 'yamobile.services::lang.components.categories.properties.items.title',
-                'description' => 'yamobile.services::lang.components.categories.properties.items.description',
+                'title'       => 'Параметр пагинации',
+                'description' => 'Параметр отвечающий за количество выводимых категорий',
                 'default'     => '6',
             ],
         ];

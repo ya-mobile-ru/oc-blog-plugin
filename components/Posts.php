@@ -27,8 +27,8 @@ class Posts extends ComponentBase
                 'type'        => 'string',
             ],
             'items' => [
-                'title'       => 'yamobile.services::lang.components.categories.properties.items.title',
-                'description' => 'yamobile.services::lang.components.categories.properties.items.description',
+                'title'       => 'Параметр пагинации',
+                'description' => 'Параметр отвечающий за количество выводимых постов',
                 'default'     => '6',
             ],
         ];
@@ -36,9 +36,7 @@ class Posts extends ComponentBase
 
     public function onRun()
     {
-
         $this->posts = $this->loadPosts();
-
     }
 
     public function loadPosts()
@@ -47,17 +45,16 @@ class Posts extends ComponentBase
         $items = $this->property('items');
 
         if($items){
-            
-        if ($slug) {
-            return Category::get()
-                    ->firstWhere('slug', $slug)
-                    ->posts()
-                    ->get()
-                    ->paginate($items);
+            if ($slug) {
+                return Category::get()
+                        ->firstWhere('slug', $slug)
+                        ->posts()
+                        ->get()
+                        ->paginate($items);
+            }
+            return Post::paginate($items);
         }
 
-        return Post::paginate($items);
-        }
         return Post::all();
     }
 }
