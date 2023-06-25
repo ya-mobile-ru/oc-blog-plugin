@@ -6,6 +6,9 @@ use Yamobile\Blog\Models\Category;
 
 class Posts extends ComponentBase
 {
+
+    public $posts;
+
     public function componentDetails()
     {
         return [
@@ -23,19 +26,38 @@ class Posts extends ComponentBase
                 'default'     => '{{ :slug }}',
                 'type'        => 'string',
             ],
+            'items' => [
+                'title'       => 'yamobile.services::lang.components.categories.properties.items.title',
+                'description' => 'yamobile.services::lang.components.categories.properties.items.description',
+                'default'     => '6',
+            ],
         ];
     }
 
-    public function posts()
+    public function onRun()
+    {
+
+        $this->posts = $this->loadPosts();
+
+    }
+
+    public function loadPosts()
     {
         $slug = $this->property('slug');
-        $posts;
+        $items = $this->property('items');
 
+        if($items){
+            
         if ($slug) {
-            $posts = Category::get()->firstWhere('slug', $slug)->posts()->get();
-            return $posts;
+            return Category::get()
+                    ->firstWhere('slug', $slug)
+                    ->posts()
+                    ->get()
+                    ->paginate($items);
         }
 
-        return Post::get();
+        return Post::paginate($items);
+        }
+        return Post::all();
     }
 }
