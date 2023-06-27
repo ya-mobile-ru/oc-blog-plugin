@@ -3,7 +3,7 @@ plugin:
     description: 'yamobile.blog::lang.plugin.description'
     author: Ya-mobile
     icon: oc-icon-newspaper-o
-    homepage: ''
+    homepage: 'https://github.com/ya-mobile-ru/oc-blog-plugin'
 navigation:
     blog:
         label: Блог

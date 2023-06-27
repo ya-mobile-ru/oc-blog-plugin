@@ -2,10 +2,13 @@
 
 use Cms\Classes\ComponentBase;
 use Yamobile\Blog\Models\Post as BlogPost;
-use Yamobile\Blog\Models\Category;
 
 class Post extends ComponentBase
 {
+
+    public $post;
+    public $breadcrumbs;
+
     public function componentDetails()
     {
         return [
@@ -17,6 +20,12 @@ class Post extends ComponentBase
     public function defineProperties()
     {
         return [
+            'blog_slug' => [
+                'title'       => 'Параметр URL',
+                'description' => 'Параметр URL, необходимый для выбора конкретной записи.',
+                'default'     => '{{ :blog_slug }}',
+                'type'        => 'string',
+            ],
             'slug' => [
                 'title'       => 'Параметр URL',
                 'description' => 'Параметр URL, необходимый для выбора конкретной записи.',
@@ -26,10 +35,47 @@ class Post extends ComponentBase
         ];
     }
 
-    public function post()
+    public function onRun()
+    {
+
+        $this->post = $this->loadPost();
+
+        if(!$this->post || ($this->post->category['slug'] !== $this->property('blog_slug'))) {
+            $this->setStatusCode(404);
+            return $this->controller->run('404');
+        }
+
+        $this->breadcrumbs = $this->generateBreadcrumbs();
+    }
+
+    private function loadPost()
     {
         $slug = $this->property('slug');
         
         return BlogPost::where('slug', $slug)->first();
     }
+
+    private function generateBreadcrumbs()
+    {
+
+        $arBreadcrumbs = array();
+
+        $post = $this->loadPost();
+
+        $category = $post->category;
+
+        $arBreadcrumbs[] = [
+            'name' => $category->name,
+            'link' => $category->slug
+        ];
+
+        $arBreadcrumbs[] = [
+            'name' => $post->name,
+            'link' => false
+        ];
+
+        return $arBreadcrumbs;
+
+    }
+
 }

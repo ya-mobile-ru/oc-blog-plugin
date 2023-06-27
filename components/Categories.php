@@ -1,11 +1,13 @@
 <?php namespace Yamobile\Blog\Components;
 
 use Cms\Classes\ComponentBase;
-use Yamobile\Blog\Models\Post;
 use Yamobile\Blog\Models\Category;
 
 class Categories extends ComponentBase
 {
+
+    public $categories;
+
     public function componentDetails()
     {
         return [
@@ -14,8 +16,31 @@ class Categories extends ComponentBase
         ];
     }
 
-    public function categories()
+    public function defineProperties()
     {
-        return Category::get();
+        return [
+            'items' => [
+                'title'       => 'Параметр пагинации',
+                'description' => 'Параметр отвечающий за количество выводимых категорий',
+                'default'     => '6',
+            ],
+        ];
+    }
+
+    public function onRun()
+    {
+        $this->categories = $this->loadCategories();
+    }
+
+    private function loadCategories()
+    {
+
+        $items = $this->property('items');
+
+        if($items){
+            return Category::paginate($items);
+        }
+
+        return Category::all();
     }
 }

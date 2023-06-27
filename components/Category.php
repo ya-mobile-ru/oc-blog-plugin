@@ -5,6 +5,11 @@ use Yamobile\Blog\Models\Category as BlogCategory;
 
 class Category extends ComponentBase
 {
+
+    public $category;
+    public $breadcrumbs;
+
+
     public function componentDetails()
     {
         return [
@@ -25,10 +30,37 @@ class Category extends ComponentBase
         ];
     }
 
-    public function category()
+    public function onRun()
+    {
+        $this->category = $this->loadCategory();
+
+        if(!$this->category){
+            $this->setStatusCode(404);
+            return $this->controller->run('404');
+        }
+        $this->breadcrumbs = $this->generateBreadcrumbs();
+    }
+
+    private function loadCategory()
     {
         $slug = $this->property('slug');
         
         return BlogCategory::where('slug', $slug)->first();
+    }
+
+    private function generateBreadcrumbs()
+    {
+
+        $arBreadcrumbs = array();
+
+        $category = $this->loadCategory();
+
+        $arBreadcrumbs[] = [
+            'name' => $category->name,
+            'link' => false
+        ];
+
+        return $arBreadcrumbs;
+
     }
 }
